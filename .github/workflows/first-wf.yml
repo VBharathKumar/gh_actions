@@ -1,0 +1,10 @@
+name: first-wf
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-slim
+    steps:
+      - name: first
+        run:  echo "first-command executed by github actions"
+      - name:  second
+        run: echo "second-command executed by github actions"
